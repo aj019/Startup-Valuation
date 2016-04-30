@@ -1,0 +1,54 @@
+.no-margin{
+
+	margin: 0;
+}
+
+.no-padding{
+
+	padding: 0;
+}
+
+.site-footer{
+
+	margin-top: 30px;
+	background-color: black;
+	color: white;
+	padding: 10px 0 10px 0;
+}
+
+.bottom-footer{
+
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid white;
+}
+
+.footer-nav{
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+.footer-nav li{
+
+	display: inline;
+	padding: 5px;
+	color: white;
+}
+
+.footer-nav li:before{
+
+	content: '|';
+	padding: 0px 5px;
+}
+
+.footer-nav a{
+	color: white;
+}
+
+.footer-nav a:hover{
+
+color: grey;
+text-decoration: none;
+	}

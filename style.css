@@ -1,0 +1,962 @@
+
+		@font-face {
+    		font-family: 'bellerose'; /*a name to be used later*/
+    		src: url('fonts/Bellerose.ttf'); /*URL to font*/
+		}
+
+		@font-face {
+    		font-family: 'dearJoe6'; /*a name to be used later*/
+    		src: url('fonts/dearJoe6TRIAL.ttf'); /*URL to font*/
+		}
+
+		@font-face {
+    		font-family: 'rockwell'; /*a name to be used later*/
+    		src: url('fonts/rockwell-condensed.ttf'); /*URL to font*/
+		}
+
+		@font-face {
+    		font-family: 'economica-regular'; /*a name to be used later*/
+    		src: url('fonts/economica/Economica-Regular-OTF.otf'); /*URL to font*/
+		}
+
+		@font-face {
+    		font-family: 'TextMeOne'; /*a name to be used later*/
+    		src: url('fonts/TextMeOne-Regular.ttf'); /*URL to font*/
+		}
+
+		@font-face {
+    		font-family: 'futura'; /*a name to be used later*/
+    		src: url('fonts/Futura.ttf'); /*URL to font*/
+		}
+
+		
+		body{
+			margin:0px;
+			overflow-y:none; 
+		}
+
+		#clear-fix{
+
+			clear: both;
+		}
+
+		#outer-wrapper{
+			width: 100%;
+
+		}
+
+		.down{
+			height: 45px;
+		}
+
+		#top-bar{
+			width: 100%;
+			height: 8%;
+			background-color: black;
+			position: fixed;
+		}
+
+		#logo-container{
+			height: 100%;
+		}
+
+		#logo-container img{
+			height: 100%;
+		}
+
+		@-moz-document url-prefix() {
+		    
+		    .slides {
+		        
+		        width: 100%;			
+			height: 120%;
+			
+			
+		    }
+
+		    label > .dedicated + .dedicated_image {
+			    width: 9% !important;
+			    
+			}
+
+			.industry_container {
+				    width: 9% !important;
+				    display: inline-block;
+				    margin: 2% !important;
+				}
+
+		    label > input[name="city"] + .city_image {
+
+		    	width: 10% !important;
+		    }
+
+		    #others{
+
+		    width: 30% !important;	
+		    }
+		}
+
+		.slides{
+			width: 100%;			
+			min-height: 100%;
+			display: none;
+			
+		}
+
+		section[class] .slides{
+
+			height: auto;
+		}
+
+		.adds{
+			display: inline-block;
+			height: 100%;
+			width: 5%;
+		}
+
+		#add1{
+			float: left;
+		}
+
+		#add2{
+			float: right;
+		}
+
+		
+		#slide1{
+			background-color: #db2027;
+		}
+
+		#content{
+			display: inline-block;
+			margin-top: 4%;
+			width: 90%;
+			margin-bottom: 2%;
+		}
+
+		 
+		#slide1 #content h1{
+			 
+		  font-family: bellerose;
+		  color: white;
+		  margin-top: 0%;
+		  text-align: center;
+		  font-weight: 100;
+		  margin-bottom: 0px;
+		}
+
+
+
+		 h1{	 
+		  font-family: bellerose;
+		  color: white;
+		  font-size: 400%;
+		  margin-top: 1%;
+		  text-align: center;
+		  font-weight: 100;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+
+		}
+
+		h2{
+		  font-family: economica-regular;
+		  color: white;
+		  font-size: 38px;
+		  margin-top: 0%;
+		  text-align: center;
+		  font-weight: 100;
+		  margin-bottom: 0px;
+		}
+
+		#slide1 #content p{
+			font-family: 'dearJoe6';
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			margin: 0px;
+		}
+
+		#mark_pincus{
+			height: 50%;
+		}
+
+		/* Slide 2 CSS */ 
+
+		#slide2{
+			background-color: #83ffa5;
+		}
+
+		#founders{
+			width: 100%;
+			text-align: center;
+		}
+
+		label > input[name = founders]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = founders] + .founders_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 15%;
+		  	margin: 1%;	
+
+		}
+		label > input[name = founders]:checked + .founders_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		}
+
+		#result2_container{
+			width: 100%;
+		}
+
+		#result2_count{
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			font-family: sans-serif;
+			margin: 0;
+		}
+
+		#result2_quote{
+			text-align: center;
+			color: white;
+			font-size: 30px;
+			font-family: sans-serif;
+			font-weight: 100;
+		}
+
+	/* Slide 3 CSS */
+	
+		#slide3_1{
+			background-color: #35cdff;
+			display: none;
+		}
+
+		#slide3_1 h1, #slide3_2 h1 , #slide3_3 h1 , #slide3_4 h1{
+			font-family: TextMeOne;
+			color: white;
+			font-size: 52px;
+			margin-top: 1%;
+			text-align: center;
+			font-weight: 400;
+			margin-bottom: 0px;
+			line-height: 1.5;
+		}
+
+		#slide3_2{
+
+			background-color: #35cdff;
+			display: none;
+		}
+
+
+		#slide3_3{
+
+			background-color: #35cdff;
+			display: none;
+		}
+
+
+		#slide3_4{
+
+			background-color: #35cdff;
+			display: none;
+		}
+
+		.founder_beard{
+			width:8%; 
+		}
+
+		.college_list{
+
+			width: 30%;
+			height: 7%;
+			background-color: white;
+			margin: 2%;
+			border: 0px;
+			font-size: 150%;
+		}
+
+		.time{
+			width: 100%;
+			text-align: center;
+		}
+
+		label > .dedicated{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > .dedicated + .dedicated_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 13%;
+		  	margin-right: 5%;
+		  	margin-left: 5%;	
+		}
+		label > .dedicated:checked + .dedicated_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		  	border-radius: 50%;
+		}
+
+
+		/* Slide 4 CSS */
+	
+		#slide4{
+			background-color:#bad93d;
+		}	
+
+		#slide4 h2{
+			font-family: 'dearJoe6';
+			color: white;
+			font-size: 30px;
+			margin-top: 0%;
+			text-align: center;
+			font-weight: 400;
+			margin-bottom: 0px;
+			line-height: 1.5;
+		}
+
+		 h3{
+
+		  font-family: 'futura';
+		  color: white;
+		  font-size: 142%;
+		  margin-top: 0%;
+		  text-align: center;
+		  width: 100%;
+		  font-weight: 200;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+			
+		}
+
+		.industries{
+			width: 100%;
+			text-align: center
+		}		
+
+		label > input[name = industry]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = industry] + .industry_image { /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;
+		  	margin: 1%;
+		  
+		}
+		label > input[name = industry]:checked + .industry_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		  	border-radius: 50%;
+		}
+
+		.industry_container{
+			width: 13%;
+			display: inline-block;
+			margin:1%;
+		}
+
+		/* Slide 5 CSS */
+	
+		#slide5{
+			background-color:#da3dd4;
+		}	
+
+		.type_container{
+			width: 100%;
+			text-align: center;
+		}
+
+		label > input[name = type]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = type] + .type_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 20%;	
+		  	margin:1%;
+		  	border-radius: 10px;
+		  	margin-left: 5%;
+		  	margin-right: 5%;
+		}
+		label > input[name = type]:checked + .type_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		}
+
+
+		/* Slide 6 CSS */
+	
+		#slide6{
+			background-color:#da3dd4;
+		}	
+
+		#slide6 h3{
+
+		font-family: 'futura';
+		  color: white;
+		  font-size: 247%;
+		  margin-top: 0%;
+		  text-align: center;
+		  width: 100%;
+		  font-weight: 200;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+		}
+
+		.product_developments{
+			width: 100%;
+			text-align: center;
+		}
+
+		.product_development_container{
+			width: 20%;
+			display: inline-block;
+			margin-right: 2%;
+			margin-left: 2%;
+		}
+
+		label > input[name = product_development]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = product_development] + .product_development_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;	
+		  	margin:1%;
+		}
+		label > input[name = product_development]:checked + .product_development_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		}		
+
+
+		/* Slide 7 CSS */
+	
+		#slide7{
+			background-color:#da3dd4;
+		}	
+
+		label > input[name = setup]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = setup] + .setup_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;	
+		}
+		label > input[name = setup]:checked + .setup_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		}
+
+		.setup_container{
+			width: 100%;
+			text-align: center;
+		}
+
+		.setup_types{
+			width: 20%;
+			display: inline-block;
+			margin: 1%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		#slide7 h3{
+
+		font-family: 'futura';
+		  color: white;
+		  font-size: 247%;
+		  margin-top: 0%;
+		  text-align: center;
+		  width: 100%;
+		  font-weight: 200;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+		}
+
+		/* Slide 8 CSS */
+	
+		#slide8{
+			background-color:#d96d3e;
+		}	
+
+		.knowledge{
+			text-decoration: none;
+			display: none;
+		}
+
+		.toggle_radio{  
+		position: relative;
+	  background: rgba(255,255,255,.1);
+	  margin-top: 5%;
+	  /* overflow: auto; */
+	  margin-left: 9%;
+	  padding: 0 !important;
+	  -webkit-border-radius: 50px;
+	  -moz-border-radius: 50px;
+	  border-radius: 50px;
+	  position: relative;
+	  height: 16.6%;
+	  width: 88.4%;
+		}
+		.toggle_radio > * {
+		  float: left;
+		}
+		.toggle_radio input[type=radio]{
+		  display: none;
+		  /*position: fixed;*/
+		}
+		.toggle_radio label{
+		 
+		  
+		  border-radius: 20px;
+		  font: 90%/1.618 "Source Sans Pro";
+		  color: rgba(123, 109, 109, 0.9);
+		  margin-top: 0%;
+		  z-index: 0;
+		  display: block;
+		  width: 9.3%;
+		  /* height: 10%; */
+		  margin: 0.5% 0.3%;
+		  -webkit-border-radius: 50px;
+		  -moz-border-radius: 50px;
+		  /* border-radius: 72px; */
+		  cursor: pointer;
+		  z-index: 1;
+		  /* background: rgba(0,0,0,.1); */
+		  text-align: center;
+		  /* margin: 0 2px; */
+		  /* background: blue; */
+		}
+
+		.toggle_radio label p{
+			  margin-top: 25px;
+			  color: white;
+			  font-size: 30px;
+		}
+		.toggle_option_slider{
+		  /*display: none;*/
+		  /*background: red;*/
+		 
+	  /* display: none; */
+	  /* background: red; */
+	  width: 9.2%;
+	  height: 92%;
+	  position: absolute;
+	  top: 3.3%;
+	  -webkit-border-radius: 50px;
+	  -moz-border-radius: 50px;
+	  border-radius: 50px;
+	  -webkit-transition: all .4s ease;
+	  -moz-transition: all .4s ease;
+	  -o-transition: all .4s ease;
+	  -ms-transition: all .4s ease;
+	  transition: all .4s ease;
+	
+		}
+
+		#first_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 0.5%;
+		}
+		#second_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 10.3%;
+		}
+		#third_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 20.2%;
+		}
+		#fourth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 30.2%;
+		  
+		}
+		#fifth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 40.2%;
+		 
+		}
+		#sixth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 50.2%; 
+		}
+		#seventh_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 60.2%;
+
+		}
+		#eighth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 70.2%;
+		}
+
+		#ninth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 80.2%;
+		  top: 
+		}
+
+		#tenth_toggle:checked ~ .toggle_option_slider{
+		  background: rgba(255,255,255,.3);
+		  left: 90.2%;
+		}
+				
+		/* Slide 9 CSS */
+	
+		#slide9{
+			background-color:#8a3dd9;
+		}	
+
+		.business{
+			width: 100%;
+			text-align: center;
+		}
+
+		label > input[name = business_type]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = business_type] + .business_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;	
+		  	margin:3%;
+		}
+		label > input[name = business_type]:checked + .business_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		}
+
+		.business_container{
+			width: 25%;
+			display: inline-block;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		#slide9 h3{
+			font-family: 'futura';
+			color: white;
+			font-size: 250%;
+			margin-top: 0%;
+			text-align: center;
+			width: 100%;
+			font-weight: 600;
+			margin-bottom: 0px;
+			line-height: 1.5;
+		}
+
+/* Slide 10 CSS */
+	
+		#slide10{
+			background-color:#d93ca3;
+		}	
+
+		#slide10 h3{
+		  font-family: 'futura';
+		  color: white;
+		  font-size: 217%;
+		  margin-top: 0%;
+		  text-align: center;
+		  width: 100%;
+		  font-weight: 200;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+		}
+
+		label > input[name = startup_stage]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = startup_stage] + .startup_stage_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;	
+		}
+		label > input[name = startup_stage]:checked + .startup_stage_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+		  	border-radius: 50%;
+
+		}
+
+		.startup_stages{
+			width: 100%;
+			text-align: center;
+		}
+
+		.startup_stage_container{
+			display: inline-block;
+			padding: 2%;
+			width: 12%;
+		}
+
+/* Slide 11 CSS */
+	
+		#slide11{
+			background-color:#f8657f;
+		}	
+
+		#slide11 h3{
+
+		  font-family: 'futura';
+		  color: white;
+		  font-size: 217%;
+		  margin-top: 0%;
+		  text-align: center;
+		  width: 100%;
+		  font-weight: 200;
+		  margin-bottom: 0px;
+		  line-height: 1.5;
+		}
+		
+
+		label > input[name = funding]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = funding] + .funding_stage_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 100%;	
+		}
+		label > input[name = funding]:checked + .funding_stage_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+
+		}
+
+		.funding_stage_container{
+			width: 15%;
+			display: inline-block;
+			margin:3%;
+		}
+
+		.funding_stages{
+			width: 100%;
+			text-align: center;
+		}
+
+	
+
+
+/* Slide 12 CSS */
+	
+		#slide12{
+			background-color:#f8db66;
+		}	
+
+		
+		label > input[name = city]{ /* HIDE RADIO */
+ 			display:none;
+		}
+		label > input[name = city] + .city_image{ /* IMAGE STYLES */
+		  	cursor:pointer;
+		  	border:2px solid transparent;
+		  	width: 12%;	
+		  	margin: 2%;
+		}
+		label > input[name = city]:checked + .city_image{ /* (CHECKED) IMAGE STYLES */
+		  	border:2px solid #f00;
+
+		}
+
+		.cities{
+			width: 100%;
+			text-align: center;
+		}
+
+		input[type=submit]{
+			width: 25%;
+  			height: 7%;
+  			border: 2px solid black;
+  			font-family: 'futura';
+  			font-weight: 600;
+  			font-size: 20px;
+ 	 		background: transparent;
+ 	 		cursor: pointer;
+		}
+
+		input[type=submit]:hover{
+			background-color: black;
+			color: white;
+			transition: all 1s;
+		}
+
+
+	@media screen and (max-width: 700px ) {
+
+		/*----------Anuj----------*/
+
+		/*----------H1 tag styling for alll h1 tags----------*/
+		h1{
+			font-size: 253% !important;
+
+			margin-top: 12% !important;
+		}
+
+		h3{
+
+
+		}
+
+		/*----------p tag styling for all p tags----------*/
+
+		p{
+
+			font-size: 130% !important;
+		}
+
+		.down{
+
+			height: 30px;
+		}
+
+/****************   Styling for slide  1        * ***************/		
+		#slide1 #content h1 {
+
+			font-size: 206% !important;
+
+			margin-top: 12% !important;
+		}
+/****************   Styling for slide  2        * ***************/
+
+		/*----------Styling for founder images----------*/
+
+		label > input[name = founders] + .founders_image {
+		    cursor: pointer;
+		    border: 2px solid transparent;
+		    width: 25%;
+		    margin: 1%;
+		}
+/****************   Styling for slide 3       * ***************/
+
+
+		.founder_beard {
+			    width: 22%;
+			}
+
+		.college_list {
+		    width: 70%;
+		    }	
+		
+		label > input[name = dedicated] + .dedicated_image {
+
+			    width: 38%;
+		}
+
+/****************   Styling for slide 4      * ***************/		
+
+			.industry_container{
+			
+			width: 26%;				
+			} 
+
+	
+
+/****************   Styling for slide 5      * ***************/
+
+		label > input[name = type] + .type_image {
+
+			width: 45%;
+		}	
+
+	
+
+/****************   Styling for slide 6      * ***************/	
+
+	   .product_development_container {
+
+	   	    width: 40%;
+		    display: inline-block;
+		    margin-right: 9%;
+		    margin-left: 0%;
+
+		}
+
+
+
+		#slide6 h3{
+
+			font-size: 171%;
+		}
+
+/****************   Styling for slide 7      * ***************/	
+
+	   .setup_types {
+
+	   	    width: 41%;
+		    display: inline-block;
+		    margin-right: 9%;
+		    margin-left: 0%;
+
+		}
+
+
+
+		#slide7 h3{
+
+			font-size: 171%;
+		}		
+
+/****************   Styling for slide 8     * ***************/	
+
+
+	.toggle_radio {
+
+		  height: 11.6%;
+	}
+
+/****************   Styling for slide 9      * ***************/	
+
+.business_container {
+
+	   	    width: 41%;
+		    
+
+		}
+
+
+
+		#slide9 h3{
+
+			font-size: 171%;
+		}
+
+/****************   Styling for slide 10    * ***************/					
+
+	.startup_stage_container {
+    display: inline-block;
+    padding: 5%;
+    width: 22%;
+	}
+
+	#slide10 h3 {
+
+	    font-size: 154%;	
+	}
+
+/****************   Styling for slide 11    * ***************/					
+
+	.funding_stage_container {
+    width: 36%;
+    display: inline-block;
+    margin: 3%;
+	}
+
+	#slide11 h3 {
+
+	    font-size: 154%;	
+	}	
+
+/****************   Styling for slide 12    * ***************/					
+
+	label > input[name = city] + .city_image {
+
+		width: 29%;
+	}
+
+	#slide11 h3 {
+
+	    font-size: 154%;	
+	}
+
+	input[name = submit]{
+		font-size: 16px;
+	} 
+
+}		
